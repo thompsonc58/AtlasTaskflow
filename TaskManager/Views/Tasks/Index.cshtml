@@ -1,0 +1,14 @@
+﻿@using TaskManager.Models;
+@model IEnumerable<TaskModel>
+
+@{
+}
+<h1>Task Dashboard</h1>
+<h2>Current Tasks</h2>
+
+@foreach(var task in Model)
+{
+    <p>@task.Name - @task.Description - @task.DueDate - @task.IsComplete</p>
+
+
+}
